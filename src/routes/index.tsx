@@ -173,9 +173,9 @@ function Home() {
           </h2>
           <div className="mt-10 space-y-6 text-muted-foreground text-lg leading-relaxed text-left sm:text-center">
             <p>
-              A <strong className="text-foreground">Resgatando Valores</strong> nasceu
+            A <strong className="text-foreground">Resgatando Valores</strong> nasceu
               da iniciativa de uma moradora que não aceitou ver as crianças da comunidade
-              perderem suas vidas para o tráfico. O que começou com a distribuição simples
+              perderem suas vidas em meio à violência local. O que começou com a distribuição simples
               de água, alimento e roupas em um terreno abandonado tornou-se, através do
               esforço coletivo e de doações, uma estrutura física sólida — que chegou até
               a resgatar a família em situação de rua que habitava o local, encaminhando-os
