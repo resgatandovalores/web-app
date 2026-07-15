@@ -185,8 +185,8 @@ function Home() {
               Hoje, atendemos crianças menores pela manhã e adolescentes à tarde, em turno
               inverso à escola. O critério de permanência é simples e transformador:
               estar matriculado e frequentar regularmente o ensino regular. Oferecemos
-              refúgio seguro, alimentação, atividades de apoio e proteção contra o
-              recrutamento pelo crime organizado.
+              refúgio seguro, alimentação, atividades de apoio e proteção em um contexto de
+              alta vulnerabilidade social.
             </p>
           </div>
 
