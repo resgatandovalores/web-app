@@ -1,11 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
-import heroImg from "@/assets/hero-community.jpg";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +29,32 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const galleryImages = [g1, g2, g3, g4, g5, g1, g2];
+const backgroundImage = "/Photos/photo_8_2026-07-14_18-43-27.jpg";
+
+const galleryImages = [
+  "/Photos/photo_1_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_2_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_3_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_4_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_5_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_6_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_7_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_9_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_10_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_11_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_12_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_13_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_14_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_15_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_16_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_17_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_18_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_19_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_20_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_21_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_22_2026-07-14_18-43-27.jpg",
+  "/Photos/photo_2026-07-14_18-42-31.jpg"
+];
 
 function Home() {
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -137,7 +156,7 @@ function Home() {
         className="relative min-h-[78vh] flex items-center justify-center overflow-hidden"
       >
         <img
-          src={heroImg}
+          src={backgroundImage}
           alt="Crianças e adolescentes em atividade no espaço da ONG Resgatando Valores"
           width={1920}
           height={1280}
