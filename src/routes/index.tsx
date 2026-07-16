@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
+import CoverflowGallery from "../components/CoverflowGallery";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -192,7 +193,7 @@ function Home() {
           </h2>
           <div className="mt-10 space-y-6 text-muted-foreground text-lg leading-relaxed text-left sm:text-center">
             <p>
-            A <strong className="text-foreground">Resgatando Valores</strong> nasceu
+            A ONG <strong className="text-foreground">Resgatando Valores</strong> nasceu
               da iniciativa de uma moradora que não aceitou ver as crianças da comunidade
               perderem suas vidas em meio à violência local. O que começou com a distribuição simples
               de água, alimento e roupas em um terreno abandonado tornou-se, através do
@@ -257,48 +258,13 @@ function Home() {
                 Histórias em movimento.
               </h2>
             </div>
-            <div className="flex gap-3">
-              <button
-                onClick={() => scrollBy(-1)}
-                aria-label="Anterior"
-                className="h-11 w-11 rounded-full border border-border hover:bg-primary hover:text-primary-foreground grid place-items-center"
-              >
-                ←
-              </button>
-              <button
-                onClick={() => scrollBy(1)}
-                aria-label="Próxima"
-                className="h-11 w-11 rounded-full border border-border hover:bg-primary hover:text-primary-foreground grid place-items-center"
-              >
-                →
-              </button>
-            </div>
+            
           </div>
 
-          <div
-            ref={scrollerRef}
-            onMouseDown={onMouseDown}
-            onMouseMove={onMouseMove}
-            onMouseUp={endDrag}
-            onMouseLeave={endDrag}
-            className="gallery flex gap-6 overflow-x-auto pb-6 cursor-grab active:cursor-grabbing select-none scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-          >
-            {galleryImages.map((src, i) => (
-              <figure
-                key={i}
-                className="gallery-item relative shrink-0 w-[320px] sm:w-[420px] h-[420px] overflow-hidden rounded-md bg-muted"
-              >
-                <img
-                  src={src}
-                  alt={`Atividade ${i + 1} da ONG`}
-                  loading="lazy"
-                  className="h-full w-full object-cover pointer-events-none"
-                />
-              </figure>
-            ))}
-          </div>
+          <CoverflowGallery images={galleryImages} />
+
           <p className="text-xs text-muted-foreground mt-4">
-            Passe o cursor sobre uma imagem, use as setas ou arraste para navegar.
+              Passe o cursor sobre uma imagem ou utilize as setas para navegar.
           </p>
         </div>
       </section>
@@ -433,7 +399,7 @@ function Home() {
 
           <div className="border-t border-background/15 pt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-background/50">
             <p>© {new Date().getFullYear()} Resgatando Valores. Todos os direitos reservados.</p>
-            <p>Feito com propósito e comunidade.</p>
+            <p>Feito com propósito à comunidade.</p>
           </div>
         </div>
       </footer>
