@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
 import CoverflowGallery from "../components/CoverflowGallery";
+import { HeaderAuth } from "@/components/HeaderAuth";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -115,6 +116,7 @@ function Home() {
             >
               Fazer Doação
             </a>
+            <HeaderAuth />
             <button
               className="md:hidden rounded-full p-2 border border-border"
               onClick={() => setMenuOpen((v) => !v)}
