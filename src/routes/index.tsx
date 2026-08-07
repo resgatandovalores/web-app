@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState } from "react";
 import CoverflowGallery from "../components/CoverflowGallery";
+import { HeaderAuth } from "@/components/HeaderAuth";
 
 export const Route = createFileRoute("/")({
   head: () => ({
