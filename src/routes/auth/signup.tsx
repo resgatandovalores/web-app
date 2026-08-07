@@ -126,6 +126,17 @@ function SignUpPage() {
           </Button>
         </form>
 
+        <div className="relative">
+          <div className="absolute inset-0 flex items-center">
+            <span className="w-full border-t border-border" />
+          </div>
+          <div className="relative flex justify-center text-xs uppercase">
+            <span className="bg-background px-2 text-muted-foreground">ou</span>
+          </div>
+        </div>
+
+        <GoogleSignInButton label="Criar conta com Google" />
+
         <div className="text-center text-sm">
           <span className="text-muted-foreground">Já tem conta? </span>
           <Link to="/auth/login" className="text-foreground hover:underline">
