@@ -116,6 +116,7 @@ function Home() {
             >
               Fazer Doação
             </a>
+            <HeaderAuth />
             <button
               className="md:hidden rounded-full p-2 border border-border"
               onClick={() => setMenuOpen((v) => !v)}
