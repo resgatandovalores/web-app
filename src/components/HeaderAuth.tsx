@@ -5,10 +5,10 @@ import { useAuth } from "@/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 
 export function HeaderAuth() {
-  const { isAuthenticated, user, logout } = useAuth();
+  const { isAuthenticated, isLoading, user, logout } = useAuth();
 
-  if (isLoading()) {
-    return null;
+  if (isLoading) {
+    return <div className="h-9 w-20 animate-pulse rounded-md bg-muted" />;
   }
 
   if (isAuthenticated && user) {
@@ -48,9 +48,4 @@ export function HeaderAuth() {
       </Link>
     </div>
   );
-}
-
-function isLoading() {
-  // O hook carrega assíncrono; usamos window para evitar SSR hydration mismatch
-  return typeof window === "undefined";
 }
